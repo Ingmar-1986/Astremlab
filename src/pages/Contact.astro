@@ -1,0 +1,231 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact | ASTREM Lab"
+  description="Neem contact op met ASTREM Lab voor persoonlijke begeleiding in wiskunde, fysica, statistiek, STEM en toelatingsexamens."
+>
+  <main class="contact-page">
+
+    <section class="contact-hero section-pad">
+      <div class="container contact-grid">
+
+        <!-- Linkerkolom -->
+
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+
+          <h1>
+            Laten we samen bekijken<br />
+            hoe jij vooruit kunt.
+          </h1>
+
+          <p class="contact-lead">
+            Heb je een concrete vraag, zoek je begeleiding voor een toets of
+            examen, of wil je starten met een langer traject? Vertel kort waar
+            je hulp bij nodig hebt. Ik bekijk persoonlijk welke begeleiding
+            het best aansluit bij jouw situatie.
+          </p>
+
+          <div class="contact-details">
+
+            <a href="mailto:info@astremlab.be" class="contact-detail">
+              <span class="contact-detail-label">E-mail</span>
+              <strong>info@astremlab.be</strong>
+            </a>
+
+            <a href="tel:+32456950818" class="contact-detail">
+              <span class="contact-detail-label">Telefoon</span>
+              <strong>0456 95 08 18</strong>
+            </a>
+
+            <div class="contact-detail">
+              <span class="contact-detail-label">Begeleiding</span>
+              <strong>Bellegem · Kortrijk · Online</strong>
+            </div>
+
+          </div>
+
+          <a
+            href="https://wa.me/32456950818"
+            class="btn btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start een gesprek via WhatsApp
+          </a>
+        </div>
+
+        <!-- Rechterkolom -->
+
+        <div class="contact-form-card">
+          <p class="contact-form-kicker">Vrijblijvende aanvraag</p>
+
+          <h2>Vertel kort waar je hulp bij zoekt.</h2>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/info@astremlab.be"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nieuwe aanvraag via ASTREM Lab"
+            />
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="naam">Naam</label>
+                <input
+                  id="naam"
+                  name="naam"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mailadres</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefoon">Telefoonnummer</label>
+                <input
+                  id="telefoon"
+                  name="telefoon"
+                  type="tel"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="formule">Formule</label>
+
+                <select id="formule" name="formule">
+                  <option value="">Nog niet zeker</option>
+                  <option value="ASTREM Bijles">ASTREM Bijles</option>
+                  <option value="ASTREM BOOST">ASTREM BOOST</option>
+                  <option value="ASTREM Sprint">ASTREM Sprint</option>
+                  <option value="Toelatingsexamen">
+                    Voorbereiding toelatingsexamen
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vak">Vak of opleiding</label>
+              <input
+                id="vak"
+                name="vak"
+                type="text"
+                placeholder="Bijvoorbeeld wiskunde, fysica of geneeskunde"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="bericht">Waarmee kan ik helpen?</label>
+              <textarea
+                id="bericht"
+                name="bericht"
+                rows="7"
+                placeholder="Beschrijf kort het niveau, het onderwerp en wanneer je begeleiding nodig hebt."
+                required
+              ></textarea>
+            </div>
+
+            <label class="privacy-check">
+              <input type="checkbox" name="privacy" required />
+
+              <span>
+                Ik ga ermee akkoord dat mijn gegevens gebruikt worden om op
+                deze aanvraag te antwoorden.
+              </span>
+            </label>
+
+            <button type="submit" class="btn btn-primary contact-submit">
+              Verstuur mijn aanvraag
+            </button>
+
+            <p class="form-note">
+              Je ontvangt zo snel mogelijk een persoonlijk antwoord.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-choice section-pad">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">Nog niet zeker?</p>
+
+          <h2>Welke begeleiding past bij jouw vraag?</h2>
+
+          <p>
+            Eén gerichte les, een langer traject of een intensieve voorbereiding:
+            samen kiezen we alleen wat echt nodig is.
+          </p>
+        </div>
+
+        <div class="contact-choice-grid">
+
+          <a href="/bijles" class="contact-choice-card">
+            <span>ASTREM Bijles</span>
+            <h3>Eén of enkele gerichte sessies</h3>
+            <p>
+              Voor extra uitleg, een moeilijk hoofdstuk of voorbereiding op
+              een toets.
+            </p>
+          </a>
+
+          <a href="/boost" class="contact-choice-card featured">
+            <span>ASTREM BOOST</span>
+            <h3>Een persoonlijk traject</h3>
+            <p>
+              Voor begeleiding over meerdere weken met opvolging en extra
+              materiaal.
+            </p>
+          </a>
+
+          <a href="/sprint" class="contact-choice-card sprint">
+            <span>ASTREM Sprint</span>
+            <h3>Intensieve voorbereiding</h3>
+            <p>
+              Voor examens, herexamens, starttoetsen en toelatingsexamens.
+            </p>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
