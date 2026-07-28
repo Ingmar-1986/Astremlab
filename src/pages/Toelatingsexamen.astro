@@ -3,289 +3,1547 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Toelatingsexamen arts, tandarts en dierenarts | ASTREM Lab"
-  description="Gerichte begeleiding voor het toelatingsexamen arts, tandarts en dierenarts met focus op inzicht, strategie en zelfvertrouwen."
+  title="Persoonlijke begeleiding voor het toelatingsexamen | ASTREM Lab"
+  description="Persoonlijke voorbereiding op het Vlaamse toelatingsexamen geneeskunde, tandheelkunde en diergeneeskunde."
 >
+  <main class="exam-page">
 
-  <main>
+    <section class="section exam-hero">
+      <div class="container exam-hero-grid">
 
-    <section class="exam-hero section-pad">
-        <div class="container exam-hero-grid">
-      
-          <div class="exam-hero-text">
-            <p class="eyebrow">Toelatingsexamen arts, tandarts en dierenarts</p>
-      
-            <h1>
-              Bereid je slim voor.<br />
-              Slaag met inzicht.
-            </h1>
-      
-            <p class="hero-lead">
-              ASTREM Lab begeleidt toekomstige studenten geneeskunde,
-              tandheelkunde en diergeneeskunde met een doordachte aanpak
-              waarin inzicht, strategie en zelfvertrouwen centraal staan.
-            </p>
-      
-            <div class="hero-actions">
-              <a href="/#contact" class="btn btn-primary">
-                Plan een kennismaking
-              </a>
-      
-              <a href="/tarieven" class="btn btn-secondary">
-                Bekijk de tarieven
-              </a>
-            </div>
+        <div class="exam-hero-content">
+          <p class="eyebrow">Toelatingsexamen</p>
+
+          <h1>
+            Persoonlijke begeleiding voor het toelatingsexamen
+          </h1>
+
+          <p class="lead exam-hero-lead">
+            Voor het Vlaamse toelatingsexamen geneeskunde,
+            tandheelkunde en diergeneeskunde.
+          </p>
+
+          <p class="exam-hero-intro">
+            Geen groepslessen. Geen standaardcursus. Wel een persoonlijk
+            traject dat volledig wordt afgestemd op jouw voorkennis,
+            leerstijl en ambities.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="/Contact" class="btn btn-primary">
+              Vraag een kennismakingsgesprek aan
+            </a>
+
+            <a href="#aanpak" class="btn btn-secondary">
+              Ontdek onze aanpak
+            </a>
           </div>
-      
-          <div class="exam-hero-card">
-            <p>Voorbereiding op:</p>
-      
-            <ul>
-              <li>Arts</li>
-              <li>Tandarts</li>
-              <li>Dierenarts</li>
-              <li>IJkingstoetsen STEM</li>
-            </ul>
-          </div>
-      
         </div>
-      </section>
 
-      <section class="exam-why section-pad">
+        <aside class="exam-hero-card">
+          <p>Jouw voorbereiding, persoonlijk opgebouwd</p>
+
+          <ul>
+            <li>Persoonlijke intake en niveaubepaling</li>
+            <li>Individueel studieplan</li>
+            <li>Begeleiding voor wiskunde, fysica, chemie en biologie</li>
+            <li>Studieplanning en examenstrategie</li>
+            <li>Persoonlijke coaching en opvolging</li>
+            <li>Gerichte voorbereiding op alle examenonderdelen</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+     ASTREM MED – TRAJECTEN, KEUZEHULP EN PRIJZEN
+====================================================== -->
+
+<section class="med-trajects section" id="trajecten">
+  <div class="container">
+
+    <!-- Intro -->
+    <header class="med-section-heading">
+      <p class="eyebrow">Trajecten en tarieven</p>
+
+      <h2>
+        Persoonlijke begeleiding voor jouw voorbereiding op KIW
+      </h2>
+
+      <p class="med-section-lead">
+        Geen twee leerlingen starten op hetzelfde niveau. Daarom combineren
+        we niveaubepaling, individuele vaklessen, coaching, proefexamens en
+        examenstrategie in een traject dat aansluit bij jouw voorbereiding.
+      </p>
+
+      <div class="med-subjects" aria-label="Vakken binnen KIW">
+        <span>Wiskunde</span>
+        <span>Fysica</span>
+        <span>Chemie</span>
+        <span>Biologie</span>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         KEUZEHULP
+    ====================================================== -->
+
+    <section class="med-choice" aria-labelledby="choice-title">
+      <div class="med-choice-intro">
+        <p class="eyebrow">Snelle keuzehulp</p>
+
+        <h3 id="choice-title">
+          Welk traject sluit het best aan bij jouw situatie?
+        </h3>
+
+        <p>
+          Kies de omschrijving die het meest bij jou past. Je krijgt meteen
+          een eerste aanbeveling. De definitieve keuze gebeurt na een
+          persoonlijk kennismakingsgesprek of een ASTREM Scan.
+        </p>
+      </div>
+
+      <div class="med-choice-options" data-choice-options>
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="scan"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">01</span>
+
+          <span>
+            <strong>Ik weet nog niet waar ik sta.</strong>
+            Ik wil mijn niveau, werkpunten en beste aanpak eerst in kaart brengen.
+          </span>
+        </button>
+
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="coaching"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">02</span>
+
+          <span>
+            <strong>Ik volg al een cursus.</strong>
+            Ik zoek vooral persoonlijke planning, opvolging en examenfeedback.
+          </span>
+        </button>
+
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="vak"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">03</span>
+
+          <span>
+            <strong>Ik heb vooral hulp nodig voor één vak.</strong>
+            Wiskunde, fysica, chemie of biologie vraagt extra ondersteuning.
+          </span>
+        </button>
+
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="combi"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">04</span>
+
+          <span>
+            <strong>Ik wil twee vakken grondig aanpakken.</strong>
+            Ik zoek een uitgebreid en persoonlijk KIW-traject.
+          </span>
+        </button>
+
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="premium"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">05</span>
+
+          <span>
+            <strong>Ik wil volledig begeleid worden.</strong>
+            Ik wil ondersteuning voor alle vier de KIW-vakken.
+          </span>
+        </button>
+
+        <button
+          class="med-choice-button"
+          type="button"
+          data-result="sprint"
+          aria-pressed="false"
+        >
+          <span class="med-choice-number">06</span>
+
+          <span>
+            <strong>Het examen komt snel dichterbij.</strong>
+            Ik heb nood aan een korte en intensieve voorbereiding.
+          </span>
+        </button>
+      </div>
+
+      <div
+        class="med-choice-result"
+        data-choice-result
+        role="status"
+        aria-live="polite"
+      >
+        <div class="med-choice-result-copy">
+          <span class="med-choice-label">Onze eerste aanbeveling</span>
+
+          <h4 data-choice-title>
+            Kies hierboven de situatie die bij jou past
+          </h4>
+
+          <p data-choice-text>
+            Daarna tonen we welk traject waarschijnlijk het meest geschikt is.
+          </p>
+        </div>
+
+        <a
+          href="#traject-overzicht"
+          class="btn btn-primary med-choice-link"
+          data-choice-link
+        >
+          Bekijk alle trajecten
+        </a>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         COMPACT OVERZICHT
+    ====================================================== -->
+
+    <section
+      class="med-pricing-overview"
+      id="traject-overzicht"
+      aria-labelledby="overview-title"
+    >
+      <div class="med-block-heading">
+        <p class="eyebrow">In één oogopslag</p>
+
+        <h3 id="overview-title">
+          Zes manieren om je persoonlijk voor te bereiden
+        </h3>
+
+        <p>
+          De vermelde aantallen geven ouders en leerlingen een duidelijk beeld
+          van de omvang van ieder traject. Binnen het traject worden de
+          begeleidingsmomenten flexibel ingezet.
+        </p>
+      </div>
+
+      <div class="med-overview-grid">
+
+        <article class="med-overview-card">
+          <p class="med-overview-type">Analyse en advies</p>
+          <h4>ASTREM Scan</h4>
+          <p class="med-overview-audience">
+            Voor wie eerst wil weten waar hij of zij staat.
+          </p>
+
+          <p class="med-overview-price">
+            <span>€ 149</span>
+            <small>eenmalig</small>
+          </p>
+
+          <a href="#astrem-scan" class="med-text-link">
+            Bekijk ASTREM Scan
+          </a>
+        </article>
+
+        <article class="med-overview-card">
+          <p class="med-overview-type">Persoonlijke opvolging</p>
+          <h4>ASTREM Coaching</h4>
+          <p class="med-overview-audience">
+            Voor leerlingen die al een cursus of zelfstudietraject volgen.
+          </p>
+
+          <p class="med-overview-price">
+            <small>vanaf</small>
+            <span>€ 595</span>
+          </p>
+
+          <a href="#astrem-coaching" class="med-text-link">
+            Bekijk Coaching
+          </a>
+        </article>
+
+        <article class="med-overview-card">
+          <p class="med-overview-type">Eén KIW-vak</p>
+          <h4>ASTREM Vaktraject</h4>
+          <p class="med-overview-audience">
+            Voor wiskunde, fysica, chemie of biologie.
+          </p>
+
+          <p class="med-overview-price">
+            <small>vanaf</small>
+            <span>€ 1.195</span>
+          </p>
+
+          <a href="#astrem-vaktraject" class="med-text-link">
+            Bekijk het Vaktraject
+          </a>
+        </article>
+
+        <article class="med-overview-card med-overview-featured">
+          <span class="med-card-badge">Aanbevolen</span>
+
+          <p class="med-overview-type">Twee KIW-vakken</p>
+          <h4>ASTREM Combi</h4>
+          <p class="med-overview-audience">
+            Uitgebreide begeleiding voor twee vakken naar keuze.
+          </p>
+
+          <p class="med-overview-price">
+            <small>vanaf</small>
+            <span>€ 1.995</span>
+          </p>
+
+          <a href="#astrem-combi" class="med-text-link">
+            Bekijk ASTREM Combi
+          </a>
+        </article>
+
+        <article class="med-overview-card med-overview-premium">
+          <p class="med-overview-type">Volledige KIW-begeleiding</p>
+          <h4>ASTREM Premium Med</h4>
+          <p class="med-overview-audience">
+            Voor wiskunde, fysica, chemie én biologie.
+          </p>
+
+          <p class="med-overview-price">
+            <small>vanaf</small>
+            <span>€ 3.495</span>
+          </p>
+
+          <a href="#astrem-premium" class="med-text-link">
+            Bekijk Premium Med
+          </a>
+        </article>
+
+        <article class="med-overview-card">
+          <p class="med-overview-type">Intensieve voorbereiding</p>
+          <h4>ASTREM Sprint</h4>
+          <p class="med-overview-audience">
+            Voor een gerichte inhaalbeweging vlak voor het examen.
+          </p>
+
+          <p class="med-overview-price">
+            <small>vanaf</small>
+            <span>€ 695</span>
+          </p>
+
+          <a href="#astrem-sprint" class="med-text-link">
+            Bekijk ASTREM Sprint
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         VERGELIJKINGSTABEL
+    ====================================================== -->
+
+    <section
+      class="med-comparison"
+      aria-labelledby="comparison-title"
+    >
+      <div class="med-block-heading">
+        <p class="eyebrow">Trajecten vergelijken</p>
+
+        <h3 id="comparison-title">
+          Wat is er concreet inbegrepen?
+        </h3>
+
+        <p>
+          Zo zie je meteen hoeveel lessen, coachingsmomenten en
+          examenmomenten ieder traject omvat.
+        </p>
+      </div>
+
+      <div class="med-table-wrap">
+        <table class="med-comparison-table">
+          <thead>
+            <tr>
+              <th scope="col">Onderdeel</th>
+              <th scope="col">Scan</th>
+              <th scope="col">Coaching</th>
+              <th scope="col">Vaktraject</th>
+              <th scope="col" class="is-highlighted">Combi</th>
+              <th scope="col">Premium Med</th>
+              <th scope="col">Sprint</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="med-price-row">
+              <th scope="row">Tarief</th>
+              <td>€ 149</td>
+              <td>vanaf € 595</td>
+              <td>vanaf € 1.195</td>
+              <td class="is-highlighted">vanaf € 1.995</td>
+              <td>vanaf € 3.495</td>
+              <td>vanaf € 695</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Intake</th>
+              <td><span class="med-check">✓</span></td>
+              <td>90 min</td>
+              <td><span class="med-check">✓</span></td>
+              <td class="is-highlighted"><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Niveaubepaling</th>
+              <td>Uitgebreid</td>
+              <td><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td class="is-highlighted"><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td>Gericht</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Persoonlijk studieplan</th>
+              <td>Advies</td>
+              <td><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td class="is-highlighted"><span class="med-check">✓</span></td>
+              <td>Persoonlijk jaarplan</td>
+              <td>Actieplan</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Individuele lessen</th>
+              <td><span class="med-dash">—</span></td>
+              <td><span class="med-dash">—</span></td>
+              <td><strong>12 × 90 min</strong></td>
+              <td class="is-highlighted"><strong>24 × 90 min</strong></td>
+              <td><strong>36 × 90 min</strong></td>
+              <td><strong>6 × 90 min</strong></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Coachingssessies</th>
+              <td>Adviesgesprek</td>
+              <td><strong>8 × 45 min</strong></td>
+              <td><strong>4 × 45 min</strong></td>
+              <td class="is-highlighted"><strong>8 × 45 min</strong></td>
+              <td><strong>12 × 45 min</strong></td>
+              <td><strong>2 × 45 min</strong></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Proefexamens met feedback</th>
+              <td><span class="med-dash">—</span></td>
+              <td><strong>6</strong></td>
+              <td><strong>4</strong></td>
+              <td class="is-highlighted"><strong>8</strong></td>
+              <td><strong>12</strong></td>
+              <td><strong>2</strong></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Simulatie-examens</th>
+              <td><span class="med-dash">—</span></td>
+              <td><strong>1</strong></td>
+              <td><strong>1</strong></td>
+              <td class="is-highlighted"><strong>2</strong></td>
+              <td><strong>4</strong></td>
+              <td><strong>1</strong></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Digitale leeromgeving</th>
+              <td><span class="med-dash">—</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td class="is-highlighted"><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td>Gericht materiaal</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Wiskunde</th>
+              <td>Analyse</td>
+              <td>Coaching</td>
+              <td>Keuzevak</td>
+              <td class="is-highlighted">Keuzevak</td>
+              <td><span class="med-check">✓</span></td>
+              <td>Volgens behoefte</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Fysica</th>
+              <td>Analyse</td>
+              <td>Coaching</td>
+              <td>Keuzevak</td>
+              <td class="is-highlighted">Keuzevak</td>
+              <td><span class="med-check">✓</span></td>
+              <td>Volgens behoefte</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Chemie</th>
+              <td>Analyse</td>
+              <td>Coaching</td>
+              <td>Keuzevak</td>
+              <td class="is-highlighted">Keuzevak</td>
+              <td><span class="med-check">✓</span></td>
+              <td>Volgens behoefte</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Biologie</th>
+              <td>Analyse</td>
+              <td>Coaching</td>
+              <td>Keuzevak</td>
+              <td class="is-highlighted">Keuzevak</td>
+              <td><span class="med-check">✓</span></td>
+              <td>Volgens behoefte</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Persoonlijke opvolging</th>
+              <td>Rapport en advies</td>
+              <td><span class="med-check">✓</span></td>
+              <td><span class="med-check">✓</span></td>
+              <td class="is-highlighted"><span class="med-check">✓</span></td>
+              <td>Prioritair</td>
+              <td><span class="med-check">✓</span></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Contact tussen sessies</th>
+              <td><span class="med-dash">—</span></td>
+              <td>Korte vragen</td>
+              <td>Korte vragen</td>
+              <td class="is-highlighted">Korte vragen</td>
+              <td>Prioritair</td>
+              <td>Gedurende Sprint</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Oudergesprek</th>
+              <td>Indien gewenst</td>
+              <td>Optioneel</td>
+              <td>Optioneel</td>
+              <td class="is-highlighted">Optioneel</td>
+              <td><span class="med-check">✓</span></td>
+              <td>Optioneel</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="med-table-hint">
+        Op een kleiner scherm kun je de tabel horizontaal verschuiven.
+      </p>
+    </section>
+
+    <!-- =====================================================
+         UITGEBREIDE TRAJECTKAARTEN
+    ====================================================== -->
+
+    <section
+      class="med-package-details"
+      aria-labelledby="details-title"
+    >
+      <div class="med-block-heading">
+        <p class="eyebrow">Alle trajecten</p>
+
+        <h3 id="details-title">
+          Bekijk de volledige inhoud
+        </h3>
+      </div>
+
+      <div class="med-package-grid">
+
+        <!-- Scan -->
+        <article class="med-package-card" id="astrem-scan">
+          <div class="med-package-top">
+            <p class="med-package-type">Analyse en oriëntatie</p>
+            <h4>ASTREM Scan</h4>
+
+            <p class="med-package-tagline">
+              Ontdek waar je staat.
+            </p>
+
+            <p class="med-package-price">
+              <span>€ 149</span>
+              <small>eenmalig</small>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen en ouders die eerst een betrouwbaar beeld willen
+            van de huidige voorbereiding, sterke punten en belangrijkste
+            werkpunten binnen KIW.
+          </p>
+
+          <div class="med-package-facts">
+            <span>Intake: 45 min</span>
+            <span>Uitgebreid rapport</span>
+            <span>Persoonlijk advies</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>Persoonlijk intakegesprek</li>
+            <li>Uitgebreide niveautest</li>
+            <li>Analyse per vak en hoofdstuk</li>
+            <li>Analyse van wiskunde, fysica, chemie en biologie</li>
+            <li>Rapport met sterke punten en werkpunten</li>
+            <li>Persoonlijk studieadvies</li>
+            <li>Voorstel voor een haalbare studieplanning</li>
+            <li>Advies over het best passende vervolgtraject</li>
+            <li>Bespreking met leerling en eventueel ouders</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-secondary">
+            Plan een ASTREM Scan
+          </a>
+        </article>
+
+        <!-- Coaching -->
+        <article class="med-package-card" id="astrem-coaching">
+          <div class="med-package-top">
+            <p class="med-package-type">Zelf studeren met begeleiding</p>
+            <h4>ASTREM Coaching</h4>
+
+            <p class="med-package-tagline">
+              Zelf studeren, maar nooit alleen.
+            </p>
+
+            <p class="med-package-price">
+              <small>vanaf</small>
+              <span>€ 595</span>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen die al een cursus, online voorbereiding of
+            zelfstudietraject volgen en vooral nood hebben aan structuur,
+            opvolging, motivatie en persoonlijke feedback.
+          </p>
+
+          <div class="med-package-facts">
+            <span>8 coachingssessies</span>
+            <span>6 proefexamens</span>
+            <span>1 simulatie-examen</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>Uitgebreide intake van 90 minuten</li>
+            <li>Persoonlijk studieplan</li>
+            <li>8 coachingssessies van 45 minuten</li>
+            <li>Analyse van 6 proefexamens</li>
+            <li>Persoonlijke feedback op gemaakte fouten</li>
+            <li>1 simulatie-examen</li>
+            <li>Studieplanning opstellen en bijsturen</li>
+            <li>Motivatie- en studiecoaching</li>
+            <li>Stress- en timemanagement</li>
+            <li>Examenstrategie</li>
+            <li>Korte vragen via e-mail of berichtendienst</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-secondary">
+            Bespreek ASTREM Coaching
+          </a>
+        </article>
+
+        <!-- Vaktraject -->
+        <article class="med-package-card" id="astrem-vaktraject">
+          <div class="med-package-top">
+            <p class="med-package-type">Eén vak grondig aanpakken</p>
+            <h4>ASTREM Vaktraject</h4>
+
+            <p class="med-package-tagline">
+              Gerichte individuele begeleiding waar je die echt nodig hebt.
+            </p>
+
+            <p class="med-package-price">
+              <small>vanaf</small>
+              <span>€ 1.195</span>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen die binnen KIW vooral bij één vak een duidelijke
+            achterstand, onzekerheid of behoefte aan verdieping ervaren.
+          </p>
+
+          <div class="med-subject-choice">
+            <span>Wiskunde</span>
+            <span>Fysica</span>
+            <span>Chemie</span>
+            <span>Biologie</span>
+          </div>
+
+          <div class="med-package-facts">
+            <span>12 lessen van 90 min</span>
+            <span>4 coachingssessies</span>
+            <span>4 proefexamens</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>Intake en niveaubepaling</li>
+            <li>Persoonlijk leerplan voor het gekozen vak</li>
+            <li>12 individuele lessen van 90 minuten</li>
+            <li>4 coachingssessies van 45 minuten</li>
+            <li>4 proefexamens met persoonlijke feedback</li>
+            <li>1 simulatie-examen</li>
+            <li>Digitale cursus en oefeningen</li>
+            <li>Gerichte remediëring van zwakke hoofdstukken</li>
+            <li>Opvolging tussen de lessen</li>
+            <li>Ondersteuning bij korte inhoudelijke vragen</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-secondary">
+            Kies jouw vaktraject
+          </a>
+        </article>
+
+        <!-- Combi -->
+        <article
+          class="med-package-card med-package-featured"
+          id="astrem-combi"
+        >
+          <span class="med-package-badge">Aanbevolen traject</span>
+
+          <div class="med-package-top">
+            <p class="med-package-type">Twee vakken naar keuze</p>
+            <h4>ASTREM Combi</h4>
+
+            <p class="med-package-tagline">
+              Een grondige en persoonlijke voorbereiding voor twee KIW-vakken.
+            </p>
+
+            <p class="med-package-price">
+              <small>vanaf</small>
+              <span>€ 1.995</span>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen die bij twee wetenschapsvakken uitgebreide
+            inhoudelijke begeleiding nodig hebben en tegelijk persoonlijk
+            opgevolgd willen worden.
+          </p>
+
+          <div class="med-subject-choice">
+            <span>Kies twee vakken</span>
+            <span>Vrije combinatie</span>
+          </div>
+
+          <div class="med-package-facts">
+            <span>24 lessen van 90 min</span>
+            <span>8 coachingssessies</span>
+            <span>8 proefexamens</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>Intake en uitgebreide niveaubepaling</li>
+            <li>Persoonlijk studieplan</li>
+            <li>24 individuele lessen van 90 minuten</li>
+            <li>Flexibele verdeling van de lessen over twee vakken</li>
+            <li>8 coachingssessies van 45 minuten</li>
+            <li>8 proefexamens met persoonlijke feedback</li>
+            <li>2 simulatie-examens</li>
+            <li>Digitale leeromgeving</li>
+            <li>Videolessen en gerichte oefeningen</li>
+            <li>Regelmatige voortgangsanalyse</li>
+            <li>Examenstrategie en timemanagement</li>
+            <li>Korte vragen tussen de begeleidingsmomenten</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-primary">
+            Bespreek ASTREM Combi
+          </a>
+        </article>
+
+        <!-- Premium -->
+        <article
+          class="med-package-card med-package-premium"
+          id="astrem-premium"
+        >
+          <span class="med-package-badge">Volledige voorbereiding</span>
+
+          <div class="med-package-top">
+            <p class="med-package-type">Alle vier de KIW-vakken</p>
+            <h4>ASTREM Premium Med</h4>
+
+            <p class="med-package-tagline">
+              De meest complete persoonlijke voorbereiding.
+            </p>
+
+            <p class="med-package-price">
+              <small>vanaf</small>
+              <span>€ 3.495</span>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen die maximaal begeleid willen worden voor
+            wiskunde, fysica, chemie en biologie, met een persoonlijk jaarplan
+            en intensieve opvolging tot aan het examen.
+          </p>
+
+          <div class="med-subject-choice">
+            <span>Wiskunde</span>
+            <span>Fysica</span>
+            <span>Chemie</span>
+            <span>Biologie</span>
+          </div>
+
+          <div class="med-package-facts">
+            <span>36 lessen van 90 min</span>
+            <span>12 coachingssessies</span>
+            <span>12 proefexamens</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>ASTREM Scan en uitgebreide intake</li>
+            <li>Persoonlijk studie- en jaarplan</li>
+            <li>Begeleiding voor alle vier de KIW-vakken</li>
+            <li>36 individuele lessen van 90 minuten</li>
+            <li>Flexibele verdeling over de vier vakken</li>
+            <li>12 coachingssessies van 45 minuten</li>
+            <li>12 proefexamens met persoonlijke feedback</li>
+            <li>4 simulatie-examens</li>
+            <li>Digitale leeromgeving en oefenmateriaal</li>
+            <li>Regelmatige voortgangsanalyse</li>
+            <li>Studieplanning en motivatiecoaching</li>
+            <li>Examenstrategie en omgaan met tijdsdruk</li>
+            <li>Prioritaire ondersteuning tussen de sessies</li>
+            <li>Oudergesprekken indien gewenst</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-light">
+            Bespreek Premium Med
+          </a>
+        </article>
+
+        <!-- Sprint -->
+        <article class="med-package-card" id="astrem-sprint">
+          <div class="med-package-top">
+            <p class="med-package-type">Kort en intensief</p>
+            <h4>ASTREM Sprint</h4>
+
+            <p class="med-package-tagline">
+              Een gerichte inhaalbeweging wanneer het examen dichterbij komt.
+            </p>
+
+            <p class="med-package-price">
+              <small>vanaf</small>
+              <span>€ 695</span>
+            </p>
+          </div>
+
+          <p class="med-package-description">
+            Voor leerlingen die op korte tijd hun belangrijkste werkpunten
+            willen aanpakken en intensief willen oefenen onder
+            examenomstandigheden.
+          </p>
+
+          <div class="med-package-facts">
+            <span>6 lessen van 90 min</span>
+            <span>2 coachingssessies</span>
+            <span>2 proefexamens</span>
+          </div>
+
+          <h5>Inbegrepen</h5>
+
+          <ul class="med-package-list">
+            <li>Gerichte intake en analyse</li>
+            <li>Compact persoonlijk actieplan</li>
+            <li>6 individuele lessen van 90 minuten</li>
+            <li>Flexibele keuze van vakken en hoofdstukken</li>
+            <li>2 coachingssessies van 45 minuten</li>
+            <li>2 proefexamens met feedback</li>
+            <li>1 simulatie-examen</li>
+            <li>Focus op de grootste werkpunten</li>
+            <li>Examenstrategie en timemanagement</li>
+          </ul>
+
+          <a href="/Contact" class="btn btn-secondary">
+            Informeer naar ASTREM Sprint
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         UITBREIDINGEN
+    ====================================================== -->
+
+    <section
+      class="med-extras"
+      aria-labelledby="extras-title"
+    >
+      <div class="med-extras-copy">
+        <p class="eyebrow">Flexibel uitbreiden</p>
+
+        <h3 id="extras-title">
+          Extra begeleiding wanneer dat nodig blijkt
+        </h3>
+
+        <p>
+          Een traject kan tijdens het schooljaar worden uitgebreid. Zo blijft
+          de basisprijs duidelijk, zonder dat je vooraf begeleiding hoeft te
+          reserveren die misschien niet nodig is.
+        </p>
+      </div>
+
+      <div class="med-extras-list">
+        <div class="med-extra-item">
+          <span>Extra individuele les</span>
+          <small>90 minuten</small>
+          <strong>vanaf € 85</strong>
+        </div>
+
+        <div class="med-extra-item">
+          <span>Extra coachingssessie</span>
+          <small>45 minuten</small>
+          <strong>vanaf € 45</strong>
+        </div>
+
+        <div class="med-extra-item">
+          <span>Extra proefexamen</span>
+          <small>inclusief persoonlijke feedback</small>
+          <strong>vanaf € 35</strong>
+        </div>
+
+        <div class="med-extra-item">
+          <span>Simulatie-examen</span>
+          <small>onder examenomstandigheden</small>
+          <strong>vanaf € 60</strong>
+        </div>
+
+        <div class="med-extra-item">
+          <span>Heroriënteringsgesprek</span>
+          <small>nieuwe analyse en planning</small>
+          <strong>vanaf € 50</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         UITLEG VOOR OUDERS
+    ====================================================== -->
+
+    <aside class="med-parent-note">
+      <div>
+        <p class="eyebrow">Duidelijk voor ouders, flexibel voor leerlingen</p>
+
+        <h3>
+          Een helder traject zonder onnodige lessen
+        </h3>
+      </div>
+
+      <div class="med-parent-copy">
+        <p>
+          De vermelde aantallen tonen duidelijk hoeveel individuele lessen,
+          coachingsmomenten en examenmomenten in ieder traject zijn opgenomen.
+          De precieze inhoud en verdeling worden na de intake afgestemd op de
+          beginsituatie van de leerling.
+        </p>
+
+        <p>
+          De beschikbare lestijd wordt dus niet automatisch gelijk verdeeld.
+          Een leerling die sterk is in biologie maar moeite heeft met fysica,
+          kan binnen een Combi- of Premiumtraject meer begeleidingsmomenten
+          inzetten voor fysica.
+        </p>
+
+        <p>
+          Zo gaat geen kostbare tijd verloren aan onderdelen die al voldoende
+          beheerst worden.
+        </p>
+      </div>
+    </aside>
+
+    <!-- Slot CTA -->
+    <div class="med-traject-cta">
+      <div>
+        <p class="eyebrow">Nog niet zeker welk traject past?</p>
+
+        <h3>
+          We bekijken samen wat jij werkelijk nodig hebt.
+        </h3>
+
+        <p>
+          Tijdens een eerste gesprek bespreken we je voorkennis, beschikbare
+          tijd, huidige voorbereiding en doelstellingen. Daarna stellen we het
+          meest passende traject voor.
+        </p>
+      </div>
+
+      <div class="med-traject-cta-actions">
+        <a href="/Contact" class="btn btn-primary">
+          Plan een kennismakingsgesprek
+        </a>
+
+        <a href="#astrem-scan" class="btn btn-secondary">
+          Start met de ASTREM Scan
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script is:inline>
+  const recommendations = {
+    scan: {
+      title: "ASTREM Scan",
+      text:
+        "Start met een grondige niveaubepaling en ontvang een persoonlijk rapport, studieadvies en voorstel voor het best passende traject.",
+      href: "#astrem-scan",
+      label: "Bekijk ASTREM Scan"
+    },
+    coaching: {
+      title: "ASTREM Coaching",
+      text:
+        "Je behoudt je bestaande cursus, maar krijgt een persoonlijke coach voor planning, opvolging, proefexamens en examenstrategie.",
+      href: "#astrem-coaching",
+      label: "Bekijk ASTREM Coaching"
+    },
+    vak: {
+      title: "ASTREM Vaktraject",
+      text:
+        "Kies wiskunde, fysica, chemie of biologie en werk met twaalf individuele lessen doelgericht aan dat ene KIW-vak.",
+      href: "#astrem-vaktraject",
+      label: "Bekijk het Vaktraject"
+    },
+    combi: {
+      title: "ASTREM Combi",
+      text:
+        "Combineer twee KIW-vakken naar keuze met vierentwintig individuele lessen, coaching, proefexamens en twee simulatie-examens.",
+      href: "#astrem-combi",
+      label: "Bekijk ASTREM Combi"
+    },
+    premium: {
+      title: "ASTREM Premium Med",
+      text:
+        "Kies voor volledige begeleiding in wiskunde, fysica, chemie en biologie, met intensieve coaching en persoonlijke opvolging.",
+      href: "#astrem-premium",
+      label: "Bekijk Premium Med"
+    },
+    sprint: {
+      title: "ASTREM Sprint",
+      text:
+        "Werk in een kort en intensief traject aan je belangrijkste tekorten en oefen gericht onder examenomstandigheden.",
+      href: "#astrem-sprint",
+      label: "Bekijk ASTREM Sprint"
+    }
+  };
+
+  const buttons = document.querySelectorAll("[data-result]");
+  const title = document.querySelector("[data-choice-title]");
+  const text = document.querySelector("[data-choice-text]");
+  const link = document.querySelector("[data-choice-link]");
+  const resultBox = document.querySelector("[data-choice-result]");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const result = recommendations[button.dataset.result];
+
+      buttons.forEach((item) => {
+        item.classList.remove("is-selected");
+        item.setAttribute("aria-pressed", "false");
+      });
+
+      button.classList.add("is-selected");
+      button.setAttribute("aria-pressed", "true");
+
+      title.textContent = result.title;
+      text.textContent = result.text;
+      link.textContent = result.label;
+      link.href = result.href;
+
+      resultBox.classList.add("has-result");
+    });
+  });
+</script>
+
+    <section class="section exam-intro" id="aanpak">
+      <div class="container exam-intro-grid">
+
+        <div class="exam-intro-heading">
+          <p class="eyebrow">Een traject op maat</p>
+
+          <h2>
+            Niet iedereen heeft dezelfde voorbereiding nodig.
+          </h2>
+        </div>
+
+        <div class="exam-intro-content">
+          <p class="exam-intro-lead">
+            Sommige leerlingen willen vooral sterker worden in wiskunde of
+            fysica. Anderen hebben extra ondersteuning nodig voor chemie of
+            biologie, of zoeken vooral structuur, planning en opvolging.
+          </p>
+
+          <p>
+            Daarom kiest ASTREM bewust niet voor één standaardprogramma.
+            Tijdens de intake bekijken we jouw voorkennis, sterktes,
+            werkpunten en beschikbare voorbereidingstijd.
+          </p>
+
+          <p>
+            Op basis daarvan bouwen we één persoonlijk traject op waarin
+            wiskunde, fysica, chemie, biologie en studiecoaching samenkomen.
+            Je krijgt ondersteuning voor de onderdelen die jij nodig hebt,
+            zonder tijd te verliezen aan leerstof die je al beheerst.
+          </p>
+
+          <div class="exam-subjects">
+            <span>Wiskunde</span>
+            <span>Fysica</span>
+            <span>Chemie</span>
+            <span>Biologie</span>
+            <span>Studieplanning</span>
+            <span>Examenstrategie</span>
+          </div>
+
+          <div class="exam-intro-highlight">
+            <span>Onze overtuiging</span>
+
+            <strong>
+              Niet de meeste lesuren maken het verschil. Het juiste traject wel.
+            </strong>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section exam-why">
         <div class="container">
       
           <div class="section-heading">
-            <p class="eyebrow">Waarom ASTREM Lab?</p>
-            <h2>Meer dan examenvoorbereiding.</h2>
-            <p>
-              Je bereidt je niet alleen voor op een examen, maar op een manier van
-              denken. Daarom ligt de focus op inzicht, strategie en toepassing.
+            <p class="eyebrow">Waarom ASTREM?</p>
+      
+            <h2>
+              Geen standaardtraject, maar begeleiding die met je meegroeit.
+            </h2>
+      
+            <p class="section-lead">
+              Een goede voorbereiding vraagt meer dan leerstof uitleggen.
+              Daarom combineren we vakinhoudelijke begeleiding met planning,
+              opvolging en persoonlijke coaching.
             </p>
           </div>
       
           <div class="exam-why-grid">
+      
             <article class="exam-why-card">
-              <h3>Wetenschappelijke expertise</h3>
+              <span class="exam-why-number">01</span>
+      
+              <h3>Persoonlijke intake</h3>
+      
               <p>
-                Begeleiding vanuit een sterke achtergrond in fysica, wiskunde en STEM.
+                We brengen je voorkennis, sterktes, werkpunten en beschikbare
+                voorbereidingstijd zorgvuldig in kaart.
               </p>
             </article>
       
             <article class="exam-why-card">
-              <h3>Inzicht boven memoriseren</h3>
+              <span class="exam-why-number">02</span>
+      
+              <h3>Begeleiding per vak</h3>
+      
               <p>
-                Geen trucjes, maar begrijpen waarom een redenering werkt.
+                Je krijgt gerichte ondersteuning voor wiskunde, fysica, chemie
+                en biologie, afgestemd op wat jij nodig hebt.
               </p>
             </article>
       
             <article class="exam-why-card">
-              <h3>Strategisch oefenen</h3>
+              <span class="exam-why-number">03</span>
+      
+              <h3>Persoonlijk studieplan</h3>
+      
               <p>
-                Gericht werken aan vraagtypes, valkuilen en tijdsdruk.
+                We vertalen je doelen naar een haalbare planning met duidelijke
+                prioriteiten en concrete tussenstappen.
               </p>
             </article>
       
             <article class="exam-why-card">
-              <h3>Persoonlijke aanpak</h3>
+              <span class="exam-why-number">04</span>
+      
+              <h3>Voortdurende opvolging</h3>
+      
               <p>
-                Afgestemd op jouw niveau, planning en struikelblokken.
+                Je traject wordt regelmatig geëvalueerd en bijgestuurd op basis
+                van je vooruitgang en veranderende noden.
               </p>
             </article>
+      
           </div>
       
         </div>
       </section>
 
-      <section class="exam-formulas section-pad">
-
+      <section class="section exam-process" id="verloop">
         <div class="container">
       
           <div class="section-heading">
+            <p class="eyebrow">Hoe verloopt het traject?</p>
       
-            <p class="eyebrow">Jouw voorbereiding</p>
+            <h2>
+              Van eerste kennismaking tot het toelatingsexamen.
+            </h2>
       
-            <h2>Welke begeleiding past het best bij jou?</h2>
-      
-            <p>
-              Elke leerling vertrekt vanuit een andere beginsituatie. Daarom biedt
-              ASTREM Lab drie begeleidingsformules aan, telkens met dezelfde focus
-              op inzicht, structuur en duurzame vooruitgang.
+            <p class="section-lead">
+              Je traject groeit mee met je voorbereiding. We starten met een helder
+              beeld van je beginsituatie en sturen onderweg voortdurend bij.
             </p>
-      
           </div>
       
-          <div class="exam-formulas-grid">
+          <div class="exam-process-list">
       
-            <!-- BIJLES -->
+            <article class="exam-process-step">
+              <span class="exam-process-number">01</span>
       
-            <article class="formula-card">
-      
-              <span class="formula-tag">
-                ASTREM Bijles
-              </span>
-      
-              <h3>
-                Flexibele hulp,<br>
-                precies wanneer jij die nodig hebt.
-              </h3>
-      
-              <p>
-                Ideaal wanneer je één of enkele gerichte sessies nodig hebt
-                rond een specifiek hoofdstuk of moeilijk onderwerp.
-              </p>
-      
-              <ul>
-      
-                <li>✓ Eén of enkele sessies</li>
-                <li>✓ Moeilijke hoofdstukken</li>
-                <li>✓ Toetsvoorbereiding</li>
-                <li>✓ Vanaf €45/u</li>
-      
-              </ul>
-      
-              <a href="/bijles" class="btn btn-secondary">
-                Ontdek ASTREM Bijles
-              </a>
-      
-            </article>
-      
-            <!-- BOOST -->
-      
-            <article class="formula-card featured">
-      
-              <div class="featured-badge">
-      
-                Meest gekozen
-      
+              <div class="exam-process-title">
+                <p class="exam-process-label">Start</p>
+                <h3>Kennismakingsgesprek</h3>
               </div>
       
-              <span class="formula-tag">
-      
-                ASTREM BOOST
-      
-              </span>
-      
-              <h3>
-      
-                Een persoonlijk traject
-                voor maximale slaagkansen.
-      
-              </h3>
-      
               <p>
-      
-                Werk gedurende meerdere weken aan inzicht,
-                strategie, planning en zelfvertrouwen.
-      
+                We bespreken je studiekeuze, verwachtingen, beschikbare tijd en
+                eerdere voorbereiding. Zo bekijken we of ASTREM bij jou past.
               </p>
-      
-              <ul>
-      
-                <li>✓ Persoonlijk leertraject</li>
-                <li>✓ Opvolging tussen de lessen</li>
-                <li>✓ Extra oefeningen</li>
-                <li>✓ Vanaf €50/u</li>
-      
-              </ul>
-      
-              <a href="/boost" class="btn btn-primary">
-      
-                Ontdek ASTREM BOOST
-      
-              </a>
-      
             </article>
       
-            <!-- SPRINT -->
+            <article class="exam-process-step">
+              <span class="exam-process-number">02</span>
       
-            <article class="formula-card">
-      
-              <span class="formula-tag">
-      
-                ASTREM Sprint
-      
-              </span>
-      
-              <h3>
-      
-                De ultieme voorbereiding
-                vlak voor je examen.
-      
-              </h3>
+              <div class="exam-process-title">
+                <p class="exam-process-label">Analyse</p>
+                <h3>Intake en niveaubepaling</h3>
+              </div>
       
               <p>
-      
-                Een intensieve sessie van drie uur waarin
-                we focussen op wat voor jou het meeste verschil maakt.
-      
+                We brengen je voorkennis voor wiskunde, fysica, chemie en biologie
+                in kaart en bepalen waar de belangrijkste groeikansen liggen.
               </p>
+            </article>
       
-              <ul>
+            <article class="exam-process-step">
+              <span class="exam-process-number">03</span>
       
-                <li>✓ Examenvoorbereiding</li>
-                <li>✓ Herexamens</li>
-                <li>✓ 3 uur intensief</li>
-                <li>✓ Vanaf €60/u</li>
+              <div class="exam-process-title">
+                <p class="exam-process-label">Plan</p>
+                <h3>Persoonlijk studieplan</h3>
+              </div>
       
-              </ul>
+              <p>
+                Je krijgt een haalbaar traject met duidelijke prioriteiten,
+                tussendoelen en een planning die aansluit bij je schoolwerk en agenda.
+              </p>
+            </article>
       
-              <a href="/sprint" class="btn btn-secondary">
+            <article class="exam-process-step">
+              <span class="exam-process-number">04</span>
       
-                Ontdek ASTREM Sprint
+              <div class="exam-process-title">
+                <p class="exam-process-label">Begeleiding</p>
+                <h3>Individuele vaklessen</h3>
+              </div>
       
-              </a>
+              <p>
+                Je werkt gericht aan de vakken en onderwerpen waarvoor jij
+                ondersteuning nodig hebt, telkens op jouw tempo en niveau.
+              </p>
+            </article>
       
+            <article class="exam-process-step">
+              <span class="exam-process-number">05</span>
+      
+              <div class="exam-process-title">
+                <p class="exam-process-label">Opvolging</p>
+                <h3>Coaching en bijsturing</h3>
+              </div>
+      
+              <p>
+                We volgen je vooruitgang op, bespreken moeilijkheden en passen je
+                planning of inhoud aan wanneer dat nodig is.
+              </p>
+            </article>
+      
+            <article class="exam-process-step">
+              <span class="exam-process-number">06</span>
+      
+              <div class="exam-process-title">
+                <p class="exam-process-label">Toepassen</p>
+                <h3>Oefenen onder examenomstandigheden</h3>
+              </div>
+      
+              <p>
+                Je leert niet alleen de leerstof beheersen, maar ook efficiënt werken
+                onder tijdsdruk, vragen selecteren en je examenstrategie verfijnen.
+              </p>
+            </article>
+      
+            <article class="exam-process-step exam-process-step-final">
+              <span class="exam-process-number">07</span>
+      
+              <div class="exam-process-title">
+                <p class="exam-process-label">Doel</p>
+                <h3>Met vertrouwen naar het examen</h3>
+              </div>
+      
+              <p>
+                In de laatste fase brengen we alles samen, zodat je voorbereid,
+                gestructureerd en met vertrouwen aan het toelatingsexamen begint.
+              </p>
             </article>
       
           </div>
       
         </div>
-      
       </section>
 
-      <section class="exam-process section-pad">
+      <section class="section exam-subjects-section" id="vakken">
         <div class="container">
       
           <div class="section-heading">
-            <p class="eyebrow">Onze aanpak</p>
-            <h2>Hoe bereiden we je voor op het toelatingsexamen?</h2>
-            <p>
-              We starten niet zomaar met oefeningen. Eerst brengen we je beginsituatie,
-              doelen en planning in kaart. Daarna bouwen we stap voor stap een traject
-              op dat past bij jouw niveau.
+            <p class="eyebrow">De vier wetenschapsvakken</p>
+      
+            <h2>
+              Gerichte begeleiding voor elk onderdeel van het examen.
+            </h2>
+      
+            <p class="section-lead">
+              Je hoeft niet voor elk vak evenveel ondersteuning te krijgen.
+              We bepalen samen waar jouw prioriteiten liggen en stemmen de
+              begeleiding daarop af.
             </p>
           </div>
       
-          <div class="process-timeline">
+          <div class="exam-subject-grid">
       
-            <article class="process-step">
-              <span>01</span>
-              <h3>Kennismaking</h3>
-              <p>We luisteren naar je doelen, timing en huidige voorbereiding.</p>
+            <article class="exam-subject-card">
+              <div class="exam-subject-top">
+                <span class="exam-subject-code">W</span>
+      
+                <div>
+                  <p class="exam-subject-label">Wetenschapsvak</p>
+                  <h3>Wiskunde</h3>
+                </div>
+              </div>
+      
+              <p>
+                We versterken je rekenvaardigheid, algebraïsch inzicht en
+                probleemoplossend denken, met bijzondere aandacht voor het
+                correct en efficiënt verwerken van examenvragen.
+              </p>
+      
+              <ul>
+                <li>Algebra en vergelijkingen</li>
+                <li>Functies en grafieken</li>
+                <li>Meetkunde en goniometrie</li>
+                <li>Toepassingsvragen en examenstrategie</li>
+              </ul>
             </article>
       
-            <article class="process-step">
-              <span>02</span>
-              <h3>Niveau-analyse</h3>
-              <p>We bekijken waar je sterk staat en waar de grootste struikelblokken zitten.</p>
+            <article class="exam-subject-card">
+              <div class="exam-subject-top">
+                <span class="exam-subject-code">F</span>
+      
+                <div>
+                  <p class="exam-subject-label">Wetenschapsvak</p>
+                  <h3>Fysica</h3>
+                </div>
+              </div>
+      
+              <p>
+                We bouwen aan inzicht in de belangrijkste natuurkundige
+                principes en leren je formules correct interpreteren,
+                combineren en toepassen.
+              </p>
+      
+              <ul>
+                <li>Kracht, beweging en energie</li>
+                <li>Elektriciteit en magnetisme</li>
+                <li>Druk, warmte en golven</li>
+                <li>Redeneren met formules en eenheden</li>
+              </ul>
             </article>
       
-            <article class="process-step">
-              <span>03</span>
-              <h3>Persoonlijk leerplan</h3>
-              <p>Je krijgt een concreet plan met duidelijke prioriteiten en haalbare stappen.</p>
+            <article class="exam-subject-card">
+              <div class="exam-subject-top">
+                <span class="exam-subject-code">C</span>
+      
+                <div>
+                  <p class="exam-subject-label">Wetenschapsvak</p>
+                  <h3>Chemie</h3>
+                </div>
+              </div>
+      
+              <p>
+                We helpen je verbanden leggen tussen stoffen, reacties en
+                berekeningen, zodat je chemische vraagstukken stap voor stap
+                leert analyseren.
+              </p>
+      
+              <ul>
+                <li>Atomen, moleculen en bindingen</li>
+                <li>Reactievergelijkingen en stoichiometrie</li>
+                <li>Zuren, basen en oplossingen</li>
+                <li>Chemische berekeningen en redeneringen</li>
+              </ul>
             </article>
       
-            <article class="process-step">
-              <span>04</span>
-              <h3>Gericht oefenen</h3>
-              <p>We trainen redeneren, toepassen, snelheid en examenstrategie.</p>
+            <article class="exam-subject-card">
+              <div class="exam-subject-top">
+                <span class="exam-subject-code">B</span>
+      
+                <div>
+                  <p class="exam-subject-label">Wetenschapsvak</p>
+                  <h3>Biologie</h3>
+                </div>
+              </div>
+      
+              <p>
+                We brengen structuur in de leerstof en oefenen op het leggen
+                van verbanden tussen cellen, organen, erfelijkheid en
+                biologische processen.
+              </p>
+      
+              <ul>
+                <li>Celbiologie en stofwisseling</li>
+                <li>Genetica en voortplanting</li>
+                <li>Anatomie en fysiologie</li>
+                <li>Ecologie en evolutie</li>
+              </ul>
             </article>
       
-            <article class="process-step">
-              <span>05</span>
-              <h3>Klaar voor het examen</h3>
-              <p>Je gaat naar het examen met meer structuur, inzicht en vertrouwen.</p>
+          </div>
+      
+          <div class="exam-subjects-note">
+            <div>
+              <p class="eyebrow">Eén geïntegreerd traject</p>
+      
+              <h3>
+                Vier vakken, één persoonlijke voorbereiding.
+              </h3>
+            </div>
+      
+            <p>
+              Je traject wordt niet opgedeeld in losse cursussen. De vakken,
+              studieplanning en coaching worden op elkaar afgestemd, zodat je
+              gericht werkt aan het geheel van het toelatingsexamen.
+            </p>
+          </div>
+      
+        </div>
+      </section>
+
+      <section class="section exam-fit" id="voor-wie">
+        <div class="container">
+      
+          <div class="section-heading">
+            <p class="eyebrow">Voor wie?</p>
+      
+            <h2>
+              Past deze manier van voorbereiden bij jou?
+            </h2>
+      
+            <p class="section-lead">
+              ASTREM richt zich op leerlingen die niet zomaar lessen willen volgen,
+              maar doelgericht willen werken aan hun slaagkansen.
+            </p>
+          </div>
+      
+          <div class="exam-fit-grid">
+      
+            <article class="exam-fit-card exam-fit-card-positive">
+              <p class="exam-fit-label">Dit traject past bij jou als je...</p>
+      
+              <ul>
+                <li>
+                  droomt van een opleiding geneeskunde, tandheelkunde
+                  of diergeneeskunde.
+                </li>
+      
+                <li>
+                  persoonlijke begeleiding verkiest boven lessen in een grote groep.
+                </li>
+      
+                <li>
+                  ondersteuning nodig hebt voor één of meerdere wetenschapsvakken.
+                </li>
+      
+                <li>
+                  op zoek bent naar structuur, planning en regelmatige opvolging.
+                </li>
+      
+                <li>
+                  bereid bent om ook tussen de begeleidingsmomenten zelfstandig
+                  aan de slag te gaan.
+                </li>
+      
+                <li>
+                  niet alleen leerstof wilt kennen, maar ook inzicht en
+                  examenvaardigheid wilt ontwikkelen.
+                </li>
+              </ul>
+            </article>
+      
+            <article class="exam-fit-card exam-fit-card-neutral">
+              <p class="exam-fit-label">Een andere formule past misschien beter als je...</p>
+      
+              <ul>
+                <li>
+                  vooral op zoek bent naar een grote groepscursus.
+                </li>
+      
+                <li>
+                  één vaste standaardplanning wilt volgen zonder persoonlijke
+                  aanpassingen.
+                </li>
+      
+                <li>
+                  enkel samenvattingen of kant-en-klare leerstofbundels zoekt.
+                </li>
+      
+                <li>
+                  weinig tijd wilt investeren buiten de lessen.
+                </li>
+      
+                <li>
+                  uitsluitend een snelle oplossing zoekt vlak voor het examen.
+                </li>
+              </ul>
             </article>
       
           </div>
@@ -293,8 +1551,421 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
       </section>
 
+      <section class="section exam-trust">
+        <div class="container">
+      
+          <div class="section-heading exam-trust-heading">
+            <p class="eyebrow">Waarom ASTREM?</p>
+      
+            <h2>
+              Persoonlijke begeleiding met een duidelijke richting.
+            </h2>
+          </div>
+      
+          <div class="exam-trust-grid">
+      
+            <article class="exam-trust-item">
+              <span>01</span>
+              <h3>Geen overvolle groepen</h3>
+              <p>
+                Alle aandacht gaat naar jouw vragen, werkpunten en manier van leren.
+              </p>
+            </article>
+      
+            <article class="exam-trust-item">
+              <span>02</span>
+              <h3>Een traject op maat</h3>
+              <p>
+                Je voorbereiding vertrekt vanuit je voorkennis en wordt aangepast
+                wanneer je noden veranderen.
+              </p>
+            </article>
+      
+            <article class="exam-trust-item">
+              <span>03</span>
+              <h3>Vier volwaardige vakken</h3>
+              <p>
+                Wiskunde, fysica, chemie en biologie krijgen elk de aandacht die
+                binnen jouw traject nodig is.
+              </p>
+            </article>
+      
+            <article class="exam-trust-item">
+              <span>04</span>
+              <h3>Meer dan vakles</h3>
+              <p>
+                We combineren vakinhoud met studieplanning, coaching en
+                examenstrategie.
+              </p>
+            </article>
+      
+            <article class="exam-trust-item">
+              <span>05</span>
+              <h3>Regelmatige opvolging</h3>
+              <p>
+                Je voortgang wordt besproken, gemeten en waar nodig bijgestuurd.
+              </p>
+            </article>
+      
+            <article class="exam-trust-item">
+              <span>06</span>
+              <h3>Focus op inzicht</h3>
+              <p>
+                Je leert niet alleen antwoorden vinden, maar ook begrijpen waarom
+                een aanpak werkt.
+              </p>
+            </article>
+      
+          </div>
+      
+        </div>
+      </section>
 
+      <section class="section exam-formulas" id="formules">
+        <div class="container">
+      
+          <div class="section-heading">
+            <p class="eyebrow">Begeleidingsvormen</p>
+      
+            <h2>
+              Van een gerichte sessie tot een volledig voorbereidingstraject.
+            </h2>
+      
+            <p class="section-lead">
+              Tijdens het kennismakingsgesprek bekijken we welke formule het best
+              aansluit bij jouw beginsituatie, doelstellingen en beschikbare tijd.
+            </p>
+          </div>
+      
+          <div class="exam-formula-grid">
+      
+            <article class="exam-formula-card">
+              <p class="exam-formula-kicker">Gerichte ondersteuning</p>
+      
+              <h3>Individuele begeleiding</h3>
+      
+              <p>
+                Voor leerlingen die ondersteuning zoeken bij één vak,
+                een specifiek onderwerp of een tijdelijke moeilijkheid.
+              </p>
+      
+              <ul>
+                <li>Volledig individueel</li>
+                <li>Per vak of onderwerp</li>
+                <li>Flexibel in te plannen</li>
+                <li>Ook geschikt als aanvulling op zelfstudie</li>
+              </ul>
+      
+              <a href="/Bijles" class="exam-text-link">
+                Ontdek individuele begeleiding
+              </a>
+            </article>
+      
+            <article class="exam-formula-card">
+              <p class="exam-formula-kicker">Intensieve voorbereiding</p>
+      
+              <h3>ASTREM Sprint</h3>
+      
+              <p>
+                Een intensief begeleidingsmoment waarin we gericht werken
+                aan een duidelijk afgebakend doel.
+              </p>
+      
+              <ul>
+                <li>Meerdere uren intensieve begeleiding</li>
+                <li>Gericht op concrete werkpunten</li>
+                <li>Ideaal voor een inhaalbeweging</li>
+                <li>Met duidelijke vervolgstappen</li>
+              </ul>
+      
+              <a href="/Sprint" class="exam-text-link">
+                Ontdek ASTREM Sprint
+              </a>
+            </article>
+      
+            <article class="exam-formula-card exam-formula-card-featured">
+              <p class="exam-formula-kicker">Volledig traject</p>
+      
+              <h3>ASTREM BOOST</h3>
+      
+              <p>
+                Voor leerlingen die gedurende een langere periode structureel
+                willen werken aan kennis, vaardigheden en examenvoorbereiding.
+              </p>
+      
+              <ul>
+                <li>Persoonlijke intake</li>
+                <li>Individueel studieplan</li>
+                <li>Vakinhoudelijke begeleiding</li>
+                <li>Coaching en regelmatige opvolging</li>
+              </ul>
+      
+              <a href="/Boost" class="exam-text-link">
+                Ontdek ASTREM BOOST
+              </a>
+            </article>
+      
+          </div>
+      
+          <div class="exam-formula-message">
+            <div>
+              <p class="eyebrow">Nog niet zeker?</p>
+      
+              <h3>
+                Je hoeft vooraf nog niet te weten welke formule je nodig hebt.
+              </h3>
+            </div>
+      
+            <div>
+              <p>
+                Tijdens een eerste gesprek brengen we je situatie in kaart.
+                Daarna ontvang je een voorstel dat past bij jouw voorbereiding,
+                beschikbare tijd en doelstellingen.
+              </p>
+      
+              <a href="/Contact" class="btn btn-primary">
+                Bespreek jouw traject
+              </a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <section class="section exam-teachers">
+        <div class="container exam-teachers-grid">
+      
+          <div class="exam-teachers-heading">
+            <p class="eyebrow">De juiste expertise</p>
+      
+            <h2>
+              Begeleiding door vakdocenten die weten wat jij nodig hebt.
+            </h2>
+          </div>
+      
+          <div class="exam-teachers-content">
+            <p class="exam-teachers-lead">
+              Een sterke voorbereiding vraagt zowel een goed overzicht van het
+              volledige traject als diepgaande vakkennis.
+            </p>
+      
+            <p>
+              Daarom werkt ASTREM met ervaren vakdocenten die elk begeleiding
+              aanbieden binnen hun eigen expertise. Afhankelijk van jouw traject
+              word je gekoppeld aan de docent die het best aansluit bij je
+              leerdoelen en werkpunten.
+            </p>
+      
+            <p>
+              De begeleiding voor wiskunde, fysica, chemie en biologie staat
+              daarbij niet los van elkaar. De verschillende vakken worden
+              opgenomen binnen één afgestemd voorbereidingstraject, samen met
+              je studieplanning, coaching en opvolging.
+            </p>
+      
+            <div class="exam-teachers-principle">
+              <span>Eén ASTREM-traject</span>
+      
+              <strong>
+                De juiste vakexpert op het juiste moment, met één duidelijke
+                voorbereiding als doel.
+              </strong>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <section class="section exam-faq" id="faq">
+        <div class="container">
+      
+          <div class="exam-faq-layout">
+      
+            <div class="exam-faq-heading">
+              <p class="eyebrow">Veelgestelde vragen</p>
+      
+              <h2>
+                Praktische vragen over jouw voorbereiding.
+              </h2>
+      
+              <p>
+                Staat je vraag er niet tussen? Neem gerust contact op.
+                We bekijken graag wat mogelijk is binnen jouw situatie.
+              </p>
+      
+              <a href="/Contact" class="btn btn-secondary">
+                Stel je vraag
+              </a>
+            </div>
+      
+            <div class="exam-faq-list">
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Wanneer begin ik het best met de voorbereiding?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Hoe vroeger je start, hoe meer ruimte er is om leerstof
+                    grondig op te bouwen en regelmatig te herhalen. Toch kan ook
+                    een later gestart traject waardevol zijn. Tijdens de intake
+                    bekijken we wat haalbaar is binnen de resterende tijd.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Moet ik begeleiding volgen voor alle vier de vakken?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Nee. Je traject wordt afgestemd op jouw voorkennis. Je kunt
+                    begeleiding krijgen voor één vak, meerdere vakken of voor het
+                    volledige wetenschappelijke gedeelte van het examen.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Kan ik alleen begeleiding voor chemie of biologie volgen?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Ja. Chemie en biologie zijn volwaardige onderdelen van onze
+                    voorbereiding. We bekijken tijdens de intake welke ondersteuning
+                    je voor elk vak nodig hebt.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Hoe vaak vindt de begeleiding plaats?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Dat hangt af van je traject, beschikbare tijd en werkpunten.
+                    Sommige leerlingen hebben baat bij een vast wekelijks moment,
+                    terwijl anderen kiezen voor langere of intensievere sessies.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Is online begeleiding mogelijk?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Afhankelijk van het vak, de leerling en de gekozen formule
+                    kan begeleiding fysiek, online of in een combinatie van beide
+                    verlopen.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Kan ik tijdens het schooljaar starten?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Ja. Je kunt op verschillende momenten instappen. We starten
+                    altijd met een analyse van je voorkennis en de tijd die nog
+                    beschikbaar is tot het examen.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Krijg ik ook opdrachten tussen de lessen?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Ja. De begeleidingsmomenten vormen slechts één onderdeel van
+                    je voorbereiding. Je krijgt gerichte opdrachten, oefeningen
+                    en studietaken waarmee je zelfstandig verder werkt.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Hoe verloopt het kennismakingsgesprek?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    We bespreken je studiekeuze, huidige voorbereiding,
+                    verwachtingen en mogelijke moeilijkheden. Daarna bekijken we
+                    welke begeleiding en planning het best bij jou passen.
+                  </p>
+                </div>
+              </details>
+      
+              <details class="exam-faq-item">
+                <summary>
+                  Bereidt ASTREM ook voor op examenstrategie?
+                </summary>
+      
+                <div class="exam-faq-answer">
+                  <p>
+                    Ja. Naast de leerstof besteden we aandacht aan tijdsdruk,
+                    vraagselectie, efficiënt rekenen, interpreteren van vragen
+                    en het gecontroleerd verbeteren van fouten.
+                  </p>
+                </div>
+              </details>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+      </section>
+      <section class="section exam-final">
+        <div class="container">
+      
+          <div class="exam-final-card">
+      
+            <div class="exam-final-content">
+              <p class="eyebrow">Jouw volgende stap</p>
+      
+              <h2>
+                Klaar om je voorbereiding doelgericht aan te pakken?
+              </h2>
+      
+              <p>
+                Tijdens een kennismakingsgesprek bekijken we waar je vandaag staat,
+                welke ondersteuning je nodig hebt en hoe een persoonlijk
+                voorbereidingstraject eruit kan zien.
+              </p>
+            </div>
+      
+            <div class="exam-final-actions">
+              <a href="/Contact" class="btn btn-primary">
+                Vraag een kennismakingsgesprek aan
+              </a>
+      
+              <a href="#verloop" class="btn btn-secondary">
+                Bekijk het verloop opnieuw
+              </a>
+            </div>
+      
+          </div>
+      
+        </div>
+      </section>
 
   </main>
-
 </BaseLayout>

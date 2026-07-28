@@ -3707,3 +3707,2210 @@ a.contact-detail:hover strong {
     display: none;
   }
 }
+
+/* =========================================
+   TOELATINGSEXAMEN – HERO
+========================================= */
+
+.exam-page {
+  overflow: hidden;
+}
+
+.exam-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 82% 16%,
+      rgba(29, 128, 121, 0.16),
+      transparent 34%
+    ),
+    linear-gradient(135deg, #ffffff, #eef9f8);
+}
+
+.exam-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      rgba(29, 128, 121, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(29, 128, 121, 0.055) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+}
+
+.exam-hero .container {
+  position: relative;
+}
+
+.exam-hero-content h1 {
+  max-width: 920px;
+  margin-bottom: 2rem;
+  font-size: clamp(3.3rem, 6vw, 6.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.exam-hero-lead {
+  max-width: 820px;
+  margin-bottom: 1.5rem;
+  color: var(--astremgreen);
+  font-weight: 800;
+}
+
+.exam-hero-intro {
+  max-width: 760px;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.exam-hero-card {
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: 34px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(159, 233, 227, 0.18),
+      transparent 38%
+    ),
+    linear-gradient(145deg, #0e3f43, #1d8079);
+  color: white;
+  box-shadow: 0 30px 80px rgba(18, 99, 94, 0.2);
+}
+
+.exam-hero-card > p {
+  margin-bottom: 1.4rem;
+  color: white;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.exam-hero-card li {
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.exam-hero-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #9fe9e3;
+  font-weight: 900;
+}
+
+.exam-hero-card li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 1000px) {
+  .exam-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-hero-card {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 600px) {
+  .exam-hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .exam-hero-card {
+    padding: 1.6rem;
+  }
+
+  .exam-hero-intro {
+    font-size: 1.05rem;
+  }
+}
+/* =========================================
+   TOELATINGSEXAMEN – INTRO
+========================================= */
+
+.exam-intro {
+  position: relative;
+  background: #ffffff;
+}
+
+.exam-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.exam-intro-heading {
+  position: sticky;
+  top: 180px;
+}
+
+.exam-intro-heading h2 {
+  max-width: 610px;
+  margin-bottom: 0;
+  font-size: clamp(2.8rem, 4.8vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.exam-intro-content {
+  max-width: 820px;
+}
+
+.exam-intro-content p {
+  margin-bottom: 1.45rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.exam-intro-content .exam-intro-lead {
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1.65;
+  font-weight: 750;
+}
+
+.exam-intro-highlight {
+  position: relative;
+  margin-top: 3.5rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  overflow: hidden;
+  border: 1px solid rgba(29, 128, 121, 0.18);
+  border-radius: 30px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(29, 128, 121, 0.14),
+      transparent 38%
+    ),
+    #f3fbfa;
+  box-shadow: 0 20px 55px rgba(18, 99, 94, 0.08);
+}
+
+.exam-intro-highlight::before {
+  content: "“";
+  position: absolute;
+  top: -2rem;
+  right: 1.5rem;
+  color: rgba(29, 128, 121, 0.1);
+  font-size: 12rem;
+  font-family: Georgia, serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.exam-intro-highlight span {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--astremgreen);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.exam-intro-highlight strong {
+  position: relative;
+  display: block;
+  max-width: 680px;
+  color: var(--petrol);
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+
+@media (max-width: 900px) {
+  .exam-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .exam-intro-heading {
+    position: static;
+  }
+
+  .exam-intro-heading h2 {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 600px) {
+  .exam-intro-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .exam-intro-content .exam-intro-lead {
+    font-size: 1.2rem;
+  }
+
+  .exam-intro-highlight {
+    margin-top: 2.5rem;
+    padding: 1.7rem;
+    border-radius: 24px;
+  }
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VAKLABELS
+========================================= */
+
+.exam-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 2.4rem 0 0;
+}
+
+.exam-subjects span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0.75rem 1.15rem;
+  border: 1px solid rgba(29, 128, 121, 0.2);
+  border-radius: 999px;
+  background: #f3fbfa;
+  color: var(--petrol);
+  font-weight: 800;
+  box-shadow: 0 8px 24px rgba(18, 99, 94, 0.06);
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – WAAROM ASTREM
+========================================= */
+
+.exam-why {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(29, 128, 121, 0.12),
+      transparent 32%
+    ),
+    linear-gradient(180deg, #f8fbfd, #eef8f7);
+}
+
+.exam-why .section-heading {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+
+.exam-why .section-heading h2 {
+  margin-bottom: 1.4rem;
+}
+
+.exam-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.exam-why-card {
+  position: relative;
+  min-height: 320px;
+  padding: 2rem;
+  border: 1px solid rgba(29, 128, 121, 0.14);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 50px rgba(18, 99, 94, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.exam-why-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(29, 128, 121, 0.34);
+  box-shadow: 0 26px 65px rgba(18, 99, 94, 0.12);
+}
+
+.exam-why-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 1.6rem;
+  border-radius: 18px;
+  background: rgba(29, 128, 121, 0.11);
+  color: var(--astremgreen);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.exam-why-card h3 {
+  margin-bottom: 1rem;
+  color: var(--petrol);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.exam-why-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 1100px) {
+  .exam-why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .exam-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-why-card {
+    min-height: 0;
+  }
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VERLOOP TRAJECT
+========================================= */
+
+.exam-process {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.exam-process::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -180px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: rgba(29, 128, 121, 0.07);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+.exam-process .container {
+  position: relative;
+}
+
+.exam-process .section-heading {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+
+.exam-process-list {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.exam-process-list::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  bottom: 38px;
+  left: 37px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(29, 128, 121, 0.14),
+    rgba(29, 128, 121, 0.55),
+    rgba(29, 128, 121, 0.14)
+  );
+}
+
+.exam-process-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 76px minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.8rem 2rem 1.8rem 0;
+  border: 1px solid rgba(29, 128, 121, 0.12);
+  border-radius: 26px;
+  background: #f8fbfa;
+  box-shadow: 0 14px 40px rgba(18, 99, 94, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.exam-process-step:hover {
+  transform: translateX(8px);
+  border-color: rgba(29, 128, 121, 0.3);
+  box-shadow: 0 22px 55px rgba(18, 99, 94, 0.1);
+}
+
+.exam-process-number {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-left: 8px;
+  border: 7px solid #ffffff;
+  border-radius: 50%;
+  background: var(--astremgreen);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 28px rgba(29, 128, 121, 0.22);
+}
+
+.exam-process-title {
+  padding-right: 1rem;
+}
+
+.exam-process-label {
+  margin-bottom: 0.35rem;
+  color: var(--astremgreen);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.exam-process-title h3 {
+  margin: 0;
+  color: var(--petrol);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.exam-process-step > p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.exam-process-step-final {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(159, 233, 227, 0.15),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #0e3f43, #1d8079);
+}
+
+.exam-process-step-final .exam-process-label {
+  color: #9fe9e3;
+}
+
+.exam-process-step-final h3,
+.exam-process-step-final > p {
+  color: #ffffff;
+}
+
+.exam-process-step-final > p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.exam-process-step-final .exam-process-number {
+  background: #ffffff;
+  color: var(--astremgreen);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 900px) {
+  .exam-process-step {
+    grid-template-columns: 72px 1fr;
+    gap: 1.4rem;
+    padding: 1.6rem 1.5rem 1.6rem 0;
+  }
+
+  .exam-process-step > p {
+    grid-column: 2;
+  }
+
+  .exam-process-list::before {
+    left: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .exam-process-list::before {
+    display: none;
+  }
+
+  .exam-process-step {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .exam-process-step:hover {
+    transform: translateY(-4px);
+  }
+
+  .exam-process-number {
+    margin-left: 0;
+    border-width: 0;
+  }
+
+  .exam-process-step > p {
+    grid-column: auto;
+  }
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VAKKEN
+========================================= */
+
+.exam-subjects-section {
+  position: relative;
+  background:
+    linear-gradient(
+      180deg,
+      #eef8f7 0%,
+      #f7fbfb 42%,
+      #ffffff 100%
+    );
+}
+
+.exam-subjects-section .section-heading {
+  max-width: 920px;
+  margin-bottom: 4rem;
+}
+
+.exam-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.exam-subject-card {
+  position: relative;
+  padding: clamp(1.8rem, 3vw, 2.5rem);
+  overflow: hidden;
+  border: 1px solid rgba(29, 128, 121, 0.15);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 55px rgba(18, 99, 94, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.exam-subject-card::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: rgba(29, 128, 121, 0.06);
+  pointer-events: none;
+}
+
+.exam-subject-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(29, 128, 121, 0.32);
+  box-shadow: 0 28px 70px rgba(18, 99, 94, 0.12);
+}
+
+.exam-subject-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.exam-subject-code {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      135deg,
+      var(--astremgreen),
+      var(--petrol)
+    );
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 900;
+  box-shadow: 0 12px 30px rgba(29, 128, 121, 0.2);
+}
+
+.exam-subject-label {
+  margin: 0 0 0.25rem;
+  color: var(--astremgreen);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.exam-subject-card h3 {
+  margin: 0;
+  color: var(--petrol);
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  line-height: 1.15;
+}
+
+.exam-subject-card > p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.exam-subject-card ul {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exam-subject-card li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.exam-subject-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.58em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--astremgreen);
+  box-shadow: 0 0 0 5px rgba(29, 128, 121, 0.1);
+}
+
+.exam-subjects-note {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  margin-top: 2rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: 30px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(159, 233, 227, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #0e3f43, #1d8079);
+  box-shadow: 0 24px 65px rgba(14, 63, 67, 0.18);
+}
+
+.exam-subjects-note .eyebrow {
+  color: #9fe9e3;
+}
+
+.exam-subjects-note h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.18;
+}
+
+.exam-subjects-note > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .exam-subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-subjects-note {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .exam-subject-card {
+    border-radius: 24px;
+  }
+
+  .exam-subject-code {
+    width: 56px;
+    height: 56px;
+    border-radius: 17px;
+  }
+
+  .exam-subjects-note {
+    border-radius: 24px;
+  }
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VOOR WIE
+========================================= */
+
+.exam-fit {
+  background: #ffffff;
+}
+
+.exam-fit .section-heading {
+  max-width: 900px;
+  margin-bottom: 4rem;
+}
+
+.exam-fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.exam-fit-card {
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: 30px;
+}
+
+.exam-fit-card-positive {
+  border: 1px solid rgba(29, 128, 121, 0.18);
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(29, 128, 121, 0.12),
+      transparent 38%
+    ),
+    #f3fbfa;
+  box-shadow: 0 22px 60px rgba(18, 99, 94, 0.08);
+}
+
+.exam-fit-card-neutral {
+  border: 1px solid rgba(14, 63, 67, 0.12);
+  background: #f7f9fa;
+}
+
+.exam-fit-label {
+  margin: 0 0 1.6rem;
+  color: var(--petrol);
+  font-size: 1.35rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.exam-fit-card ul {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exam-fit-card li {
+  position: relative;
+  padding-left: 2rem;
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+.exam-fit-card-positive li::before,
+.exam-fit-card-neutral li::before {
+  position: absolute;
+  top: 0.02rem;
+  left: 0;
+  font-weight: 900;
+}
+
+.exam-fit-card-positive li::before {
+  content: "✓";
+  color: var(--astremgreen);
+}
+
+.exam-fit-card-neutral li::before {
+  content: "—";
+  color: var(--muted);
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VERTROUWEN
+========================================= */
+
+.exam-trust {
+  background:
+    linear-gradient(
+      180deg,
+      #eef8f7 0%,
+      #f8fbfb 100%
+    );
+}
+
+.exam-trust-heading {
+  max-width: 880px;
+  margin-bottom: 4rem;
+}
+
+.exam-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.exam-trust-item {
+  padding: 2rem;
+  border: 1px solid rgba(29, 128, 121, 0.13);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 45px rgba(18, 99, 94, 0.06);
+}
+
+.exam-trust-item span {
+  display: block;
+  margin-bottom: 1.4rem;
+  color: var(--astremgreen);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.exam-trust-item h3 {
+  margin: 0 0 0.8rem;
+  color: var(--petrol);
+  font-size: 1.3rem;
+}
+
+.exam-trust-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – FORMULES
+========================================= */
+
+.exam-formulas {
+  background: #ffffff;
+}
+
+.exam-formulas .section-heading {
+  max-width: 950px;
+  margin-bottom: 4rem;
+}
+
+.exam-formula-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.exam-formula-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid rgba(29, 128, 121, 0.15);
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(18, 99, 94, 0.07);
+}
+
+.exam-formula-card-featured {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(159, 233, 227, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(145deg, #0e3f43, #1d8079);
+  box-shadow: 0 24px 65px rgba(14, 63, 67, 0.2);
+}
+
+.exam-formula-kicker {
+  margin: 0 0 0.7rem;
+  color: var(--astremgreen);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.exam-formula-card h3 {
+  margin: 0 0 1rem;
+  color: var(--petrol);
+  font-size: 1.8rem;
+}
+
+.exam-formula-card > p:not(.exam-formula-kicker) {
+  margin: 0 0 1.4rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.exam-formula-card ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.exam-formula-card li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.exam-formula-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--astremgreen);
+  font-weight: 900;
+}
+
+.exam-formula-card-featured .exam-formula-kicker {
+  color: #9fe9e3;
+}
+
+.exam-formula-card-featured h3,
+.exam-formula-card-featured li {
+  color: #ffffff;
+}
+
+.exam-formula-card-featured > p:not(.exam-formula-kicker) {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.exam-formula-card-featured li::before {
+  color: #9fe9e3;
+}
+
+.exam-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: auto;
+  color: var(--astremgreen);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.exam-text-link::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.exam-text-link:hover::after {
+  transform: translateX(5px);
+}
+
+.exam-formula-card-featured .exam-text-link {
+  color: #ffffff;
+}
+
+.exam-formula-message {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  margin-top: 2rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(29, 128, 121, 0.16);
+  border-radius: 30px;
+  background: #f3fbfa;
+}
+
+.exam-formula-message h3 {
+  margin: 0;
+  color: var(--petrol);
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.exam-formula-message > div:last-child p {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – VAKDOCENTEN
+========================================= */
+
+.exam-teachers {
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbfb,
+      #eef8f7
+    );
+}
+
+.exam-teachers-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.exam-teachers-heading h2 {
+  margin-bottom: 0;
+}
+
+.exam-teachers-content {
+  max-width: 820px;
+}
+
+.exam-teachers-content > p {
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.exam-teachers-content .exam-teachers-lead {
+  color: var(--ink);
+  font-size: 1.3rem;
+  font-weight: 750;
+  line-height: 1.65;
+}
+
+.exam-teachers-principle {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(18, 99, 94, 0.07);
+}
+
+.exam-teachers-principle span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--astremgreen);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.exam-teachers-principle strong {
+  display: block;
+  color: var(--petrol);
+  font-size: 1.4rem;
+  line-height: 1.45;
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – FAQ
+========================================= */
+
+.exam-faq {
+  background: #ffffff;
+}
+
+.exam-faq-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
+
+.exam-faq-heading {
+  position: sticky;
+  top: 160px;
+}
+
+.exam-faq-heading p:not(.eyebrow) {
+  margin-bottom: 1.6rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.exam-faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.exam-faq-item {
+  overflow: hidden;
+  border: 1px solid rgba(29, 128, 121, 0.15);
+  border-radius: 22px;
+  background: #f8fbfa;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.exam-faq-item[open] {
+  border-color: rgba(29, 128, 121, 0.34);
+  box-shadow: 0 16px 45px rgba(18, 99, 94, 0.08);
+}
+
+.exam-faq-item summary {
+  position: relative;
+  padding: 1.4rem 4rem 1.4rem 1.5rem;
+  color: var(--petrol);
+  font-weight: 800;
+  line-height: 1.45;
+  cursor: pointer;
+  list-style: none;
+}
+
+.exam-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.exam-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(29, 128, 121, 0.1);
+  color: var(--astremgreen);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.exam-faq-item[open] summary::after {
+  content: "−";
+}
+
+.exam-faq-answer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.exam-faq-answer p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* =========================================
+   TOELATINGSEXAMEN – SLOT CTA
+========================================= */
+
+.exam-final {
+  background: #ffffff;
+}
+
+.exam-final-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: 3rem;
+  align-items: center;
+  padding: clamp(2.5rem, 6vw, 5rem);
+  overflow: hidden;
+  border-radius: 38px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(159, 233, 227, 0.22),
+      transparent 36%
+    ),
+    linear-gradient(135deg, #0e3f43, #1d8079);
+  box-shadow: 0 30px 80px rgba(14, 63, 67, 0.22);
+}
+
+.exam-final-card::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -170px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.exam-final-content,
+.exam-final-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.exam-final-card .eyebrow {
+  color: #9fe9e3;
+}
+
+.exam-final-card h2 {
+  margin-bottom: 1.3rem;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+  line-height: 1.05;
+}
+
+.exam-final-card p {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.exam-final-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exam-final-actions .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.exam-final-actions .btn-primary {
+  background: #ffffff;
+  color: var(--petrol);
+}
+
+.exam-final-actions .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  background: transparent;
+}
+
+/* =========================================
+   RESPONSIVE – NIEUWE SECTIES
+========================================= */
+
+@media (max-width: 1000px) {
+  .exam-trust-grid,
+  .exam-formula-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exam-teachers-grid,
+  .exam-faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-faq-heading {
+    position: static;
+  }
+
+  .exam-final-card {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-final-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .exam-final-actions .btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .exam-fit-grid,
+  .exam-trust-grid,
+  .exam-formula-grid,
+  .exam-formula-message {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-fit-card,
+  .exam-formula-message {
+    border-radius: 24px;
+  }
+
+  .exam-final-card {
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .exam-final-actions {
+    flex-direction: column;
+  }
+
+  .exam-final-actions .btn {
+    width: 100%;
+  }
+
+  .exam-faq-item summary {
+    padding-left: 1.2rem;
+  }
+}
+
+<style>
+  /* =====================================================
+     ASTREM MED – BASIS
+  ====================================================== */
+
+  .med-trajects {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(
+        circle at 92% 4%,
+        rgba(29, 128, 121, 0.1),
+        transparent 26rem
+      ),
+      linear-gradient(180deg, #f7fbfa 0%, #ffffff 22%, #ffffff 100%);
+  }
+
+  .med-section-heading {
+    max-width: 960px;
+    margin-bottom: clamp(3rem, 7vw, 5.5rem);
+  }
+
+  .med-section-heading h2,
+  .med-block-heading h3,
+  .med-choice h3,
+  .med-extras h3,
+  .med-parent-note h3,
+  .med-traject-cta h3 {
+    color: var(--petrol, #123f43);
+  }
+
+  .med-section-heading h2 {
+    max-width: 850px;
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+  }
+
+  .med-section-lead {
+    max-width: 820px;
+    margin: 1.6rem 0 0;
+    color: var(--muted, #5e7274);
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    line-height: 1.75;
+  }
+
+  .med-subjects,
+  .med-subject-choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .med-subjects {
+    margin-top: 2rem;
+  }
+
+  .med-subjects span,
+  .med-subject-choice span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0.55rem 0.95rem;
+    border: 1px solid rgba(29, 128, 121, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.88);
+    color: var(--astremgreen, #1d8079);
+    font-size: 0.82rem;
+    font-weight: 800;
+  }
+
+  .med-block-heading {
+    max-width: 810px;
+    margin-bottom: 2.5rem;
+  }
+
+  .med-block-heading h3 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+
+  .med-block-heading > p:last-child {
+    margin: 1rem 0 0;
+    color: var(--muted, #5e7274);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  /* =====================================================
+     KEUZEHULP
+  ====================================================== */
+
+  .med-choice {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.25fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid rgba(29, 128, 121, 0.14);
+    border-radius: 36px;
+    background:
+      radial-gradient(
+        circle at 100% 0%,
+        rgba(159, 233, 227, 0.2),
+        transparent 40%
+      ),
+      #ffffff;
+    box-shadow: 0 28px 85px rgba(18, 99, 94, 0.1);
+  }
+
+  .med-choice-intro {
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .med-choice-intro h3 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .med-choice-intro > p:last-child {
+    margin: 1.3rem 0 0;
+    color: var(--muted, #5e7274);
+    line-height: 1.75;
+  }
+
+  .med-choice-options {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .med-choice-button {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1.25rem;
+    border: 1px solid rgba(29, 128, 121, 0.13);
+    border-radius: 20px;
+    background: rgba(247, 251, 250, 0.75);
+    color: var(--ink, #193235);
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      background 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .med-choice-button:hover {
+    transform: translateX(5px);
+    border-color: rgba(29, 128, 121, 0.35);
+    background: #ffffff;
+    box-shadow: 0 14px 35px rgba(18, 99, 94, 0.08);
+  }
+
+  .med-choice-button.is-selected {
+    border-color: var(--astremgreen, #1d8079);
+    background: rgba(29, 128, 121, 0.08);
+    box-shadow: inset 0 0 0 1px rgba(29, 128, 121, 0.08);
+  }
+
+  .med-choice-button strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--petrol, #123f43);
+    font-size: 1rem;
+  }
+
+  .med-choice-number {
+    color: var(--astremgreen, #1d8079);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  }
+
+  .med-choice-result {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 0.25rem;
+    padding: clamp(1.5rem, 4vw, 2.3rem);
+    border-radius: 24px;
+    background: linear-gradient(135deg, #103f43, #1d8079);
+    box-shadow: 0 20px 55px rgba(18, 99, 94, 0.2);
+  }
+
+  .med-choice-result-copy {
+    max-width: 720px;
+  }
+
+  .med-choice-label {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #a9eee8;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .med-choice-result h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(1.45rem, 3vw, 2.15rem);
+  }
+
+  .med-choice-result p {
+    margin: 0.65rem 0 0;
+    color: rgba(255, 255, 255, 0.79);
+    line-height: 1.65;
+  }
+
+  /* =====================================================
+     OVERZICHTSKAARTEN
+  ====================================================== */
+
+  .med-pricing-overview,
+  .med-comparison,
+  .med-package-details {
+    padding-top: clamp(5rem, 10vw, 8rem);
+  }
+
+  .med-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+
+  .med-overview-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 310px;
+    padding: 1.8rem;
+    border: 1px solid rgba(29, 128, 121, 0.14);
+    border-radius: 26px;
+    background: #ffffff;
+    box-shadow: 0 16px 45px rgba(18, 99, 94, 0.07);
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .med-overview-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(18, 99, 94, 0.12);
+  }
+
+  .med-overview-type,
+  .med-package-type {
+    margin: 0 0 0.55rem;
+    color: var(--astremgreen, #1d8079);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .med-overview-card h4 {
+    margin: 0;
+    color: var(--petrol, #123f43);
+    font-size: 1.55rem;
+    line-height: 1.15;
+  }
+
+  .med-overview-audience {
+    margin: 0.9rem 0 1.4rem;
+    color: var(--muted, #5e7274);
+    line-height: 1.6;
+  }
+
+  .med-overview-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    align-items: baseline;
+    margin: auto 0 1.3rem;
+  }
+
+  .med-overview-price span {
+    color: var(--petrol, #123f43);
+    font-size: 1.9rem;
+    font-weight: 900;
+  }
+
+  .med-overview-price small {
+    color: var(--muted, #5e7274);
+  }
+
+  .med-text-link {
+    color: var(--astremgreen, #1d8079);
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .med-text-link::after {
+    content: " →";
+  }
+
+  .med-overview-featured {
+    border-color: rgba(29, 128, 121, 0.4);
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(159, 233, 227, 0.25),
+        transparent 40%
+      ),
+      #ffffff;
+  }
+
+  .med-overview-premium {
+    background: linear-gradient(145deg, #103f43, #1d8079);
+  }
+
+  .med-overview-premium h4,
+  .med-overview-premium .med-overview-price span {
+    color: #ffffff;
+  }
+
+  .med-overview-premium .med-overview-type {
+    color: #a9eee8;
+  }
+
+  .med-overview-premium .med-overview-audience,
+  .med-overview-premium .med-overview-price small {
+    color: rgba(255, 255, 255, 0.76);
+  }
+
+  .med-overview-premium .med-text-link {
+    color: #ffffff;
+  }
+
+  .med-card-badge,
+  .med-package-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    background: var(--astremgreen, #1d8079);
+    color: #ffffff;
+    font-size: 0.67rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .med-card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  /* =====================================================
+     VERGELIJKINGSTABEL
+  ====================================================== */
+
+  .med-table-wrap {
+    overflow-x: auto;
+    border: 1px solid rgba(29, 128, 121, 0.15);
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 20px 60px rgba(18, 99, 94, 0.08);
+  }
+
+  .med-comparison-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    color: var(--ink, #193235);
+  }
+
+  .med-comparison-table th,
+  .med-comparison-table td {
+    padding: 1rem 1.05rem;
+    border-right: 1px solid rgba(29, 128, 121, 0.09);
+    border-bottom: 1px solid rgba(29, 128, 121, 0.09);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .med-comparison-table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    min-width: 210px;
+    background: #ffffff;
+    text-align: left;
+  }
+
+  .med-comparison-table thead th {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    background: #eef8f7;
+    color: var(--petrol, #123f43);
+    font-size: 0.9rem;
+  }
+
+  .med-comparison-table thead th:first-child {
+    z-index: 3;
+    background: #eef8f7;
+  }
+
+  .med-comparison-table tr:last-child th,
+  .med-comparison-table tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .med-comparison-table th:last-child,
+  .med-comparison-table td:last-child {
+    border-right: 0;
+  }
+
+  .med-comparison-table .is-highlighted {
+    background: rgba(29, 128, 121, 0.075);
+  }
+
+  .med-comparison-table thead .is-highlighted {
+    background: var(--astremgreen, #1d8079);
+    color: #ffffff;
+  }
+
+  .med-price-row td {
+    color: var(--petrol, #123f43);
+    font-weight: 900;
+  }
+
+  .med-check {
+    color: var(--astremgreen, #1d8079);
+    font-size: 1.1rem;
+    font-weight: 950;
+  }
+
+  .med-dash {
+    color: #a9b5b6;
+  }
+
+  .med-table-hint {
+    display: none;
+    margin: 0.8rem 0 0;
+    color: var(--muted, #5e7274);
+    font-size: 0.85rem;
+  }
+
+  /* =====================================================
+     UITGEBREIDE PAKKETKAARTEN
+  ====================================================== */
+
+  .med-package-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .med-package-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 2rem;
+    padding: clamp(1.8rem, 4vw, 2.7rem);
+    border: 1px solid rgba(29, 128, 121, 0.15);
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 20px 60px rgba(18, 99, 94, 0.08);
+  }
+
+  .med-package-top h4 {
+    margin: 0;
+    color: var(--petrol, #123f43);
+    font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .med-package-tagline {
+    margin: 0.7rem 0 0;
+    color: var(--muted, #5e7274);
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+
+  .med-package-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.55rem;
+    align-items: baseline;
+    margin: 1.5rem 0 0;
+  }
+
+  .med-package-price span {
+    color: var(--petrol, #123f43);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 950;
+    letter-spacing: -0.035em;
+  }
+
+  .med-package-price small {
+    color: var(--muted, #5e7274);
+  }
+
+  .med-package-description {
+    margin: 1.5rem 0;
+    color: var(--muted, #5e7274);
+    line-height: 1.72;
+  }
+
+  .med-package-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .med-package-facts span {
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    background: rgba(29, 128, 121, 0.08);
+    color: var(--petrol, #123f43);
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .med-package-card h5 {
+    margin: 0 0 1rem;
+    color: var(--petrol, #123f43);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .med-package-list {
+    display: grid;
+    gap: 0.7rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .med-package-list li {
+    position: relative;
+    padding-left: 1.55rem;
+    color: var(--ink, #193235);
+    line-height: 1.55;
+  }
+
+  .med-package-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--astremgreen, #1d8079);
+    font-weight: 950;
+  }
+
+  .med-package-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+
+  .med-package-featured {
+    border: 2px solid rgba(29, 128, 121, 0.55);
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(159, 233, 227, 0.25),
+        transparent 34%
+      ),
+      #ffffff;
+    box-shadow: 0 30px 80px rgba(18, 99, 94, 0.15);
+  }
+
+  .med-package-badge {
+    margin-bottom: 1.3rem;
+  }
+
+  .med-package-premium {
+    border-color: transparent;
+    background:
+      radial-gradient(
+        circle at 100% 0%,
+        rgba(159, 233, 227, 0.17),
+        transparent 36%
+      ),
+      linear-gradient(145deg, #0e3a3e, #1d8079);
+    box-shadow: 0 30px 80px rgba(14, 58, 62, 0.24);
+  }
+
+  .med-package-premium .med-package-type {
+    color: #a9eee8;
+  }
+
+  .med-package-premium h4,
+  .med-package-premium h5,
+  .med-package-premium .med-package-price span,
+  .med-package-premium .med-package-list li {
+    color: #ffffff;
+  }
+
+  .med-package-premium .med-package-tagline,
+  .med-package-premium .med-package-description,
+  .med-package-premium .med-package-price small {
+    color: rgba(255, 255, 255, 0.77);
+  }
+
+  .med-package-premium .med-subject-choice span,
+  .med-package-premium .med-package-facts span {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  .med-package-premium .med-package-list li::before {
+    color: #a9eee8;
+  }
+
+  .btn-light {
+    background: #ffffff;
+    color: var(--petrol, #123f43);
+  }
+
+  /* =====================================================
+     UITBREIDINGEN
+  ====================================================== */
+
+  .med-extras {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    margin-top: clamp(5rem, 10vw, 8rem);
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 32px;
+    background: #eef8f7;
+  }
+
+  .med-extras h3 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+  }
+
+  .med-extras-copy > p:last-child {
+    margin: 1.2rem 0 0;
+    color: var(--muted, #5e7274);
+    line-height: 1.7;
+  }
+
+  .med-extras-list {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .med-extra-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.25rem 1.25rem;
+    align-items: center;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid rgba(29, 128, 121, 0.11);
+    border-radius: 16px;
+    background: #ffffff;
+  }
+
+  .med-extra-item span {
+    color: var(--petrol, #123f43);
+    font-weight: 850;
+  }
+
+  .med-extra-item small {
+    grid-column: 1;
+    color: var(--muted, #5e7274);
+  }
+
+  .med-extra-item strong {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    color: var(--astremgreen, #1d8079);
+    white-space: nowrap;
+  }
+
+  /* =====================================================
+     OUDERS EN CTA
+  ====================================================== */
+
+  .med-parent-note {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    margin-top: 2rem;
+    padding: clamp(2rem, 5vw, 4rem);
+    border: 1px solid rgba(29, 128, 121, 0.14);
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow: 0 18px 55px rgba(18, 99, 94, 0.07);
+  }
+
+  .med-parent-note h3 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+  }
+
+  .med-parent-copy {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .med-parent-copy p {
+    margin: 0;
+    color: var(--muted, #5e7274);
+    line-height: 1.75;
+  }
+
+  .med-parent-copy p:last-child {
+    color: var(--petrol, #123f43);
+    font-weight: 800;
+  }
+
+  .med-traject-cta {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) auto;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+    padding: clamp(2rem, 5vw, 4rem);
+    border-radius: 32px;
+    background:
+      radial-gradient(
+        circle at 90% 0%,
+        rgba(159, 233, 227, 0.2),
+        transparent 35%
+      ),
+      linear-gradient(135deg, #103f43, #1d8079);
+    box-shadow: 0 28px 75px rgba(18, 99, 94, 0.22);
+  }
+
+  .med-traject-cta .eyebrow {
+    color: #a9eee8;
+  }
+
+  .med-traject-cta h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.07;
+  }
+
+  .med-traject-cta p:last-child {
+    max-width: 720px;
+    margin: 1rem 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+  }
+
+  .med-traject-cta-actions {
+    display: grid;
+    gap: 0.75rem;
+    min-width: 250px;
+  }
+
+  .med-traject-cta .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #ffffff;
+  }
+
+  /* =====================================================
+     RESPONSIVE
+  ====================================================== */
+
+  @media (max-width: 1050px) {
+    .med-overview-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .med-table-hint {
+      display: block;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .med-choice,
+    .med-extras,
+    .med-parent-note,
+    .med-traject-cta {
+      grid-template-columns: 1fr;
+    }
+
+    .med-choice-intro {
+      position: static;
+    }
+
+    .med-choice-result {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .med-package-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .med-traject-cta-actions {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .med-overview-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .med-choice,
+    .med-package-card,
+    .med-extras,
+    .med-parent-note,
+    .med-traject-cta {
+      border-radius: 24px;
+    }
+
+    .med-choice-button {
+      grid-template-columns: 1fr;
+      gap: 0.45rem;
+    }
+
+    .med-extra-item {
+      grid-template-columns: 1fr;
+    }
+
+    .med-extra-item small,
+    .med-extra-item strong {
+      grid-column: 1;
+      grid-row: auto;
+    }
+
+    .med-extra-item strong {
+      margin-top: 0.35rem;
+    }
+  }
