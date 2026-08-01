@@ -6277,7 +6277,7 @@ a.contact-detail:hover strong {
   }
 }
 
-media (max-width: 720px) {
+@media (max-width: 720px) {
   .exam-hero {
     padding: 3.75rem 0 4.5rem;
   }
@@ -6321,7 +6321,7 @@ media (max-width: 720px) {
     border-radius: 22px;
   }
 
-  .exam-hero-steps li {
+  .exam-hero-step {
     grid-template-columns: 34px minmax(0, 1fr);
     gap: 0.65rem;
   }
